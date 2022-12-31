@@ -1,0 +1,62 @@
+{
+  "clientId": "958363542535426068", // The id of the discord bot
+  "guildId": "1009161812337491978", // The id of the discord server
+  "mainColor": "00787a", // The hex color of the embeds by default
+  "lang": "main", // If you want to set english please set "main"
+
+
+  "openTicketChannelId": "1054809441574338652", // The id of the channel where the message to create a ticket will be sent
+  "ticketTypes": [ // You have a limit of 25 types (the limit of Discord)
+    {
+      "codeName": "Question", // The name need to be in lowercase
+      "name": "Question", // The name that will be displayed in the ticket
+      "emoji": "💡", // The emoji of the type (can be blank)
+      "color": "035700", // Can be a hex color or blank to use the main color
+      "categoryId": "1009161815269310466", // The category id where the tickets will be created
+      "customDescription": "Please explain your suggestion in detail. If you have any images, please attach them to your message.\n\nReason: REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+
+    },
+    {
+      "codeName": "Report Player", // The name need to be in lowercase
+      "name": "Report Player", // The name that will be displayed in the ticket
+      "emoji": "🛑", // The emoji of the type (can be blank)
+      "color": "#f8312f", // Can be a hex color or blank to use the main color
+      "categoryId": "1009161815269310466", // The category id where the tickets will be created
+      "customDescription": "Please explain your report in detail. If you have any images, please attach them to your message.\n\nReason: REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": false // If the bot should ask the reason of the ticket
+    },
+    {
+      "codeName": "Report Bug", // The name need to be in lowercase
+      "name": "Report Bug", // The name that will be displayed in the ticket
+      "emoji": "🪲", // The emoji of the type (can be blank)
+      "color": "#f8312f", // Can be a hex color or blank to use the main color
+      "categoryId": "1009161815269310466", // The category id where the tickets will be created
+      "customDescription": "Please explain your report in detail. If you have any images, please attach them to your message.\n\nReason: REASON", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": false // If the bot should ask the reason of the ticket
+    },
+    {
+      "codeName": "Other", // The name need to be in lowercase
+      "name": "Other", // The name that will be displayed in the ticket
+      "emoji": "❄️", // The emoji of the type (can be blank)
+      "color": "", // Can be a hex color or blank to use the main color
+      "categoryId": "1009161815269310466", // The category id where the tickets will be created
+      "customDescription": "", // The custom description of the ticket type (set to blank to use the default description)
+      "askReason": true // If the bot should ask the reason of the ticket
+    }
+  ],
+  "ticketNameOption": "Ticket-TICKETCOUNT", // Here is all parameter: USERNAME, USERID, TICKETCOUNT
+  "rolesWhoHaveAccessToTheTickets": [
+    "1009161812861784104",
+    "1009161812790476877"
+  ], // Roles who can access to the tickets
+  "pingRoleWhenOpened": true,
+  "roleToPingWhenOpenedId": "1009161812790476878", // The role to ping when a ticket is opened
+  "logs": true,
+  "logsChannelId": "1009161815269310469", // The id of the channel where the logs will be sent
+  "claimButton": true,
+  "whoCanCloseTicket": "STAFFONLY", // STAFFONLY (roles configured at "rolesWhoHaveAccessToTheTickets") or EVERYONE
+  "closeButton": true, // If false the ticket can be closed only by doing /closes
+  "askReasonWhenClosing": false, // If false the ticket will be closed without asking the reason
+  "maxTicketOpened": 40000000000000 // The number of tickets the user can open while another one is already open. Set to 0 to unlimited
+}
